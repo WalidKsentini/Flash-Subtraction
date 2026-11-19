@@ -1,4 +1,4 @@
-# Flash Subtraction
+# [Flash Subtraction](https://flashsubtraction.vercel.app/)
 
 A minimal flash subtraction trainer for mental math practice. Numbers flash on screen one at a time, you subtract them mentally, then type the answer.
 
@@ -24,4 +24,4 @@ The final answer is always positive. If the settings make that impossible, the p
 
 ## Run it
 
-No build step and no dependencies. Open `index.html` in a browser, or use the live version on GitHub Pages.
+No build step and no dependencies. Open `index.html` in a browser, or use the live version on [Vercel](https://flashsubtraction.vercel.app/).
