@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/Screenshot 2026-11-19 215403.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Flash Subtraction</title>
+    <style>
+  
+  </style>
+  </head>
+  <body>
+  <main>
+    <section id="settings">
+      <h1>Flash subtraction</h1>
+      <label><span>Numbers<small>how many appear</small></span><input id="count" type="number" min="2" max="30" value="10"></label>
+      <label><span>Interval (ms)<small>time each number stays</small></span><input id="interval" type="text" min="100" max="5000" step="50" value="800"></label>
+      <label><span>First number digits<small>positive</small></span><input id="d1" type="number" min="1" max="9" value="3"></label>
+      <label><span>Next numbers digits<small>negative</small></span><input id="d2" type="number" min="1" max="9" value="2"></label>
+      <button class="primary" id="start">Start</button>
+    </section>
+
+    <section id="play" class="hidden">
+      <div class="flash" id="flash" aria-live="assertive"></div>
+    </section>
+
+    <section id="ask" class="hidden">
+      <h1>Your answer</h1>
+      <input id="answer" type="number" inputmode="numeric" autocomplete="off">
+      <button class="primary" id="check">Check</button>
+    </section>
+
+    <section id="result" class="hidden">
+      <div class="result" id="verdict"></div>
+      <div class="sum" id="sum"></div>
+      <div class="row">
+        <button id="params">Settings (Esc)</button>
+        <button class="primary" id="again"><span class="label">Another (Enter)</span></button>
+      </div>
+    </section>
+  </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
